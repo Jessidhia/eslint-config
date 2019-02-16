@@ -1,0 +1,39 @@
+{
+  "name": "@jessidhia/eslint-config",
+  "version": "0.1.0",
+  "description": "Reexports @jessidhia/eslint-config-base but with all plugins as dependencies",
+  "repository": "https://github.com/Jessidhia/eslint-config-base",
+  "author": "Jessica Franco",
+  "license": "MIT",
+  "scripts": {
+    "eslint": "eslint --ext js,ts,tsx ."
+  },
+  "dependencies": {
+    "@jessidhia/eslint-config-base": "^0.1.0",
+    "@typescript-eslint/eslint-plugin": "~1.3.0",
+    "@typescript-eslint/parser": "~1.3.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-eslint-comments": "^3.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react-hooks": "^1.0.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "~1.16.4",
+    "typescript": "~3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.0"
+  },
+  "eslintConfig": {
+    "extends": "@jessidhia/eslint-config-base",
+    "parserOptions": {
+      "sourceType": "script"
+    },
+    "env": {
+      "node": true
+    }
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}
