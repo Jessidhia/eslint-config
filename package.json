@@ -9,13 +9,15 @@
     "eslint": "eslint --ext js,ts,tsx ."
   },
   "dependencies": {
-    "@jessidhia/eslint-config-base": "^0.1.0",
+    "@jessidhia/eslint-config-base": "~0.2.0",
     "@typescript-eslint/eslint-plugin": "~1.3.0",
     "@typescript-eslint/parser": "~1.3.0",
     "eslint-config-prettier": "^4.0.0",
     "eslint-plugin-eslint-comments": "^3.1.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-react-hooks": "^1.0.2",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.2.0",
     "prettier": "~1.16.4",
     "typescript": "~3.3.3"
   },
@@ -26,6 +28,11 @@
     "extends": "@jessidhia/eslint-config-base",
     "parserOptions": {
       "sourceType": "script"
+    },
+    "settings": {
+      "react": {
+        "version": "16.8"
+      }
     },
     "env": {
       "node": true
